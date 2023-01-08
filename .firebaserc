@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "portfoilo-af9ab": {
+      "hosting": {
+        "app": [
+          "portfoilo-af9ab"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "portfoilo-af9ab"
+  }
+}

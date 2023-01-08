@@ -1,0 +1,511 @@
+#headerBar{
+  width: 100vw;
+  background-color: black;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  display: none;
+  position: fixed;
+  z-index: 100;
+}
+
+#headerBarInside{
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+#headerSimple{
+  width: 100vw;
+  background-color: black;
+  height: 60px;
+  text-align: center;
+  line-height: 48px;
+  position: fixed;
+  z-index: 100;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#signature{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  text-align: left;
+  color:white;
+}
+
+#sig{
+  height: 80%;
+  width: 40%;
+}
+
+#sig img{
+  max-height: 100%;
+}
+
+#menu{
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  height: 15px;
+}
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aclonica');
+
+
+
+
+.hamburger-icon {
+  position: relative;
+  z-index: 1;
+  width :50px;
+}
+
+.hamburger-icon span {
+  height: 2px;
+  width: 25px;
+  background-color:white;
+  display: block;
+  margin: 3px 0px 3px 0px;
+  transition: 0.7s ease-in-out;
+  transform: none;
+}
+
+#openmenu:checked ~ .menu-pane {
+  left: 0vw;
+  transform: translateX(0vw);
+}
+
+#openmenu:checked ~ .body-text {
+display: none;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+  opacity: 0;
+}
+
+.menu-pane {
+  background-color: black;
+  position: absolute;
+  transform: translateX(-500vw);
+  transform-origin: (0, 0);
+  width: 100%;
+  height: 100vh;
+  transition: 0.6s ease-in-out;
+  font-weight: 400
+}
+
+.menu-pane p {
+  color: black;
+  font-size: 0.6em;
+}
+
+.menu-links li, a, span {
+  transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 18px;
+  padding-top: 100px
+}
+
+
+.menu-pane li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1em;
+  width: 100%
+}
+
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu-links li:hover a {
+  color: #FFAB91;
+}
+
+.menu-links li:first-child:hover a {
+  color: black;
+  background-color: #FFAB91;
+}
+
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 10vw;
+  opacity: 0;
+  height: 2vh;
+}
+
+#verticalMenu {
+  background-color: black;
+  width: 275px;
+  height: 100%;
+  position: fixed;
+}
+
+#signatureVertical{
+  height: 30%;
+  background-color: red
+}
+
+#list{
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+  height: 60%;
+  font-weight: 400;
+}
+
+#list ul {
+  list-style-type: none;
+  width: 80%;
+}
+
+#socialMedia{
+  background-color: red;
+  height: 20%;
+}
+
+#list ul li{
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 50px;
+  color: white;
+  text-align: left
+}
+
+#list ul li:hover{
+    color: lightgreen;
+    cursor: pointer;
+}
+
+#list ul li:hover{
+  color: lightgreen;
+  cursor: pointer;
+}
+
+.menu-pane ul li:hover{
+  color: lightgreen;
+  cursor: pointer;
+}
+
+#bodyy {
+  overflow-y: auto;
+
+}
+
+#profilePic{
+  // background: url("/assets/background.png");
+  background-size: cover;
+  text-align: center;
+}
+
+#skills{
+  font-weight: 400px;
+}
+
+
+.skill{
+  display: grid;
+  justify-content: center;
+}
+
+.project{
+  display: grid;
+  justify-content: center;
+}
+
+.skillName{
+  text-align: center;
+  margin-top: 7px;
+  font-weight: 900;
+}
+
+#descInner{
+  width: 80%;
+
+}
+
+.ty1{
+ color:black;
+}
+
+.typewriter{
+  color: #00dffc ;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:white; }
+}
+
+
+
+.typewriter1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+
+
+
+#descr{
+  font-size: 7vw;
+  word-wrap: initial;
+  font-family: Bebas Neue;
+  line-height: 8vwx;
+  width: 80%;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  // color: #00dffc ;
+  font-weight: 800;
+  // padding-bottom: 12rem;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#quote{
+  font-size: 6vw;
+  color: white;
+  background-color: black;
+  height: 250px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #00dffc ;
+}
+
+#quoteInside{
+  width: 60%;
+  text-align: center
+}
+
+.projectName{
+  text-align: center;
+  margin-top: 7px;
+}
+
+.header{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Aclonica';
+  padding-top: 30px;
+}
+
+#projects{
+  background-color: white;
+}
+
+.projectOnTop{
+  width: 91.5%;
+  aspect-ratio: 1/0.64;
+  background-color:black;
+  z-index: 2;
+  border-radius: 30px;
+  opacity: 0;
+  display: grid;
+  display: grid;
+  align-content: center;
+
+}
+
+.projectOnTop:hover{
+  transition: .45s ease-in-out;
+  opacity: 1;
+}
+
+.opccc{
+  opacity: 0;
+  z-index: 1;
+}
+
+.opc{
+  z-index:1;;
+  width: 90%;
+  aspect-ratio : 1 / 0.64;
+  border-radius: 30px;
+  background-size: 100%;
+  margin-bottom: -100%;
+  background-size: cover;
+}
+
+.projectText{
+  color: white;
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.projectButton{
+  width: 160px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 12px;
+  text-align: center;
+  /* line-height: 34%; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 2px white solid;
+  color: white;
+  font-weight: 900;
+}
+
+.projectButton:hover{
+  color: black;
+  background-color: white;
+  z-index:3;
+}
+
+.projectOnTop a{
+  text-decoration: none;
+}
+
+#iconBanner{
+  width: 80%;
+  width: 80vw;
+  text-align: center;
+}
+
+.iconBanner{
+  width: 50px;
+  display: inline-block;
+}
+
+#footer{
+  width: 100%;
+  background-color: black;
+  height: 150px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center
+}
+
+#copyRights{
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: -45px;
+}
+
+// .opc::after{
+//   position: absolute;
+//   top: -4px;
+//   bottom: -4px;
+//   left: -4px;
+//   right: -4px;
+//   background: linear-gradient(to bottom, #E2B0C7 0%, #BB96C2 100%);
+//   content: '';
+//   z-index: -1;
+//   border-radius: 16px;
+// }
+
+
+@media (max-width:2999px){
+  #headerBar {
+    display: block;
+  }
+  #verticalMenu{
+    display: none;
+  }
+  #bodyy{
+    width: 100%;
+    margin-top: 48px;
+  }
+  #descr{
+    width: 100%;
+  }
+}
+
+@media (max-width:500){
+  #quote{
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width:400){
+  #descr{
+    font-size: 25px;
+  }
+
+}
+
+@media (min-width:3000px){
+  #headerBar {
+    display: none
+  }
+  #bodyy{
+    width: calc(100% - 275px);
+    margin-left: 275px;
+  }
+  #verticalMenu{
+    display: block
+  }
+}

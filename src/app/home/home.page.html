@@ -1,0 +1,122 @@
+
+<ion-content>
+  <!-- <div id = "headerBar">
+    <div id= "headerBarInside">
+        <div id ="menu">
+        <div class="menu-container">
+
+            <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+
+            <div class="hamburger-icon">
+              <label for="openmenu" id="hamburger-label">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+
+              <div class="menu-pane">
+                  <ul>
+                      <li>About Me</li>
+                      <li  (click)="gotoAnchorHeader('skills',true)">Skills</li>
+                      <li (click)="gotoAnchorHeader('projects',true)">Projects</li>
+
+                  </ul>
+
+
+
+              </div>
+
+          </div>
+        </div>
+        <div id = "signature">hiiii </div>
+    </div>
+  </div> -->
+
+  <div id="headerSimple">
+    <div id="sig">
+        <img src="/assets/signature2.png"></div>
+    </div>
+
+  <div id = "verticalMenu">
+    <div id = signatureVertical>hiiii</div>
+    <div id ="list">
+        <ul>
+            <li>About Me</li>
+            <li (click)="gotoAnchorHeader('skills',false)">Skills</li>
+            <li (click)="gotoAnchorHeader('projects',false)">Projects</li>
+        </ul>
+    </div>
+    <div id ="socialMedia">
+      sicail
+    </div>
+
+  </div>
+
+  <div id ="bodyy">
+    <div id ="profilePic">
+        <div id = "descr">
+          <div id ="inerImg"><img src="/assets/giff.gif"></div>
+          <div id = "descInner"> Programmer, Graphic Designer and Developer</div></div>
+          <div id ="inerImg"><img style="max-width:80%" src="/assets/PROGRAMMING7.png"></div>
+    </div>
+    <div id = "quote">
+      <div id="quoteInside">
+        <div id ="t1" class="ty"> Life Is Too Short</div>
+        <div id ="t2" class="ty1"> To Be Average</div>
+      </div>
+    </div>
+    <div id ="skills">
+      <div class="header">Skills</div>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" size-md="4" size-lg ="3" *ngFor="let item of skills" class="skill cardd">
+                  <ion-img src={{item.pic}}></ion-img>
+                  <div class="skillName">{{item.name}}</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div id = "projects">
+        <div class="header">Projects</div>
+        <ion-grid>
+            <ion-row>
+              <ion-col  size="12" size-lg ="4" size-md ="6"  *ngFor="let item of projects" class="project" style= "justify-items: center">
+                  <div class="opc" style="  background: url({{item.pic}}) no-repeat center;  background-size: 100%;  background-size: cover;
+                  ">
+                      <ion-img class = "opccc" src="https://docs-demo.ionic.io/assets/madison.jpg" ></ion-img>
+                  </div>
+                  <div class="projectOnTop">
+                    <ion-grid>
+                      <ion-row>
+                        <ion-col>
+                            <div class="projectText">{{item.des}}</div>
+                        </ion-col>
+                      </ion-row>
+                      <ion-row style="display:block">
+                          <a href="{{item.site}}"  target="_blank" rel="noopener noreferrer"><div class="projectButton">Visit Site</div></a>
+                      </ion-row>
+                    </ion-grid>
+                  </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    </div>
+
+    <div id="footer">
+      <div id ="iconBanner">
+        <div class="iconBanner">
+            <a href="https://linkedin.com/in/mohammed-kamleh-75b6377b" target="_blank" rel="noopener noreferrer"> <img alt="Silhouette of a person's head" src="/assets/linkedIn3.png" /></a>
+        </div>
+        <div class="iconBanner">
+            <a href="https://leetcode.com/mkkamleh/" target="_blank" rel="noopener noreferrer"> <img alt="Silhouette of a person's head" src="/assets/LeetCodeLogo.png" /></a>
+        </div>
+      </div>
+    </div>
+    <div id="copyRights">Copyrights 2023</div>
+  </div>
+
+
+</ion-content>
